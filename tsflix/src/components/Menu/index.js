@@ -10,7 +10,7 @@ const Menu = () => {
     return (
         <nav className="Menu">
             <Link to="/">
-                <img clLinkssName="Logo" src={logo} alt="Logo do TSFLIX"/>
+                <img className="Logo" src={logo} alt="Logo do TSFLIX"/>
             </Link>
             <Button as={Link} className="ButtonLink" to="/cadastro/video" >
                 Novo vídeo
