@@ -4,14 +4,18 @@ import PageDefault from '../../components/PageDefault';
 import FormField from '../../components/FormField';
 import Button from '../../components/Button';
 
+import useForm from '../../hooks/useForm';
+
 const CadastroCategoria = () => {
   const valoresIniciais = {
     nome: '',
     descricao: '',
     cor: '',
   };
+
+  const { valores, handleChange, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
-  const [valores, setValores] = useState(valoresIniciais);
 
   useEffect(() => {
     async function loadData(){
@@ -27,22 +31,8 @@ const CadastroCategoria = () => {
   function handleSubmit(e) {
     e.preventDefault();
     setCategorias([...categorias, valores]);
-    setValores(valoresIniciais);
-  }
-
-  function setValor(chave, valor) {
-    setValores({
-      ...valores,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(event) {
-    setValor(
-      event.target.getAttribute('name'),
-      event.target.value,
-    );
-  }
+    clearForm();
+  } 
 
   return (
 
