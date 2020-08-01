@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home/App';
 import CadastroVideo from './pages/cadastro/Video';
 import CadastroCategoria from './pages/Categoria';
-
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -17,4 +16,3 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById('root')
 );
-
