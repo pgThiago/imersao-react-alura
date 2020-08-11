@@ -1,0 +1,60 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Paulo Kogos",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Se tu fremes diante do mercado, clamando por regulação do estado, para trás! Inditoso esquerdista! Não serás nunca um conservador capitalista!",
+        "url": "https://www.youtube.com/user/paulokogos/videos"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Ideias Radicais",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Gradualismo é a melhor opção!",
+        "url": "https://www.youtube.com/c/ideiasradicais/videos"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Alexandre Porto",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Vamos descentralizar tudo!",
+        "url": "https://www.youtube.com/c/AlexandrePorto/videos"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Por que não se ensina o que é Fascismo?",
+      "url": "https://www.youtube.com/watch?v=Db2tzqN7NfU&t=11s"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ItrWtTiOaKU",
+      "categoria": "Ideias Radicais",
+      "titulo": "Meu professor faz doutrinação estatista, o que fazer?",
+      "categoriaId": 2,
+      "id": 2
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=S6Bq2uCSgIw&t=10s",
+      "titulo": "Revolução na Bielorrússia - O que vai acontecer?",
+      "categoria": "Ideias Radicais",
+      "categoriaId": 2,
+      "id": 3
+    },
+    {
+      "categoria": "Ideias Radicais",
+      "url": "https://www.youtube.com/watch?v=WFQlZXOgTu4",
+      "titulo": "É cada argumento sem sentido...",
+      "categoriaId": 2,
+      "id": 4
+    }
+  ]
+}

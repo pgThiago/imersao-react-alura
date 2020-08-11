@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled.h3`
+  color: black;
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
@@ -8,7 +9,6 @@ export const Title = styled.h3`
   margin-bottom: 16px;
   display: inline-block;
   padding: 20px;
-  background: red;
   line-height: 1;
   border-radius: 4px;
 

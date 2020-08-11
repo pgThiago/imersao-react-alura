@@ -30,7 +30,7 @@ const CadastroVideo = () => {
         
     }, []);
     
-    // console.log(categoryTitles);
+    console.log('categoryTitles: ', categoryTitles);
 
     function create(){
         const URL = `http://localhost:8080/videos?_embed=videos`;
