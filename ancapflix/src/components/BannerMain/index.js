@@ -18,6 +18,11 @@ export default function BannerMain({
   const youTubeID = getYouTubeId(url);
   const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
 
+  function goWatchVideo(){
+      window.open(url, '_blank', 'noopener, noreferrer');
+      window.focus();
+  }
+  
   return (
     <BannerMainContainer backgroundImage={bgUrl}>
       <ContentAreaContainer>
@@ -35,7 +40,7 @@ export default function BannerMain({
           <VideoIframeResponsive
             youtubeID={youTubeID}
           />
-          <WatchButton>
+          <WatchButton onClick={goWatchVideo} >
             Assistir
           </WatchButton>
         </ContentAreaContainer.Item>

@@ -67,38 +67,7 @@ const CadastroCategoria = () => {
           value={valores.cor}
           onChange={handleChange}
         />
-        {/* <div>
-                    <label>
-                        Nome da categoria
-                        <input
-                        type="text"
-                        value={valores.nome}
-                        name="nome"
-                        onChange={handleChange} />
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        Descrição
-                        <textarea
-                        type="text"
-                        value={valores.descricao}
-                        name="descricao"
-                        onChange={handleChange} />
-                    </label>
-                </div>
-
-                <div>
-                    <label>
-                        Cor
-                        <input
-                        type="text"
-                        value={valores.cor}
-                        name="cor"
-                        onChange={handleChange} />
-                    </label>
-                </div> */}
+  
 
         <Button>Cadastrar</Button>
       </form>

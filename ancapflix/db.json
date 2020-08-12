@@ -14,7 +14,7 @@
       "titulo": "Ideias Radicais",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Gradualismo é a melhor opção!",
+        "text": "Gradualismo (diferente de Gadualismo) é aqui nesse canal!",
         "url": "https://www.youtube.com/c/ideiasradicais/videos"
       }
     },
@@ -23,7 +23,7 @@
       "titulo": "Alexandre Porto",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Vamos descentralizar tudo!",
+        "text": "Tem que descentralizar, eu sou a favor da descentralização!",
         "url": "https://www.youtube.com/c/AlexandrePorto/videos"
       }
     }
@@ -55,6 +55,69 @@
       "titulo": "É cada argumento sem sentido...",
       "categoriaId": 2,
       "id": 4
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nicYmaJCCco",
+      "titulo": "4 Países que o Brasil deveria copiar",
+      "categoria": "Ideias Radicais",
+      "categoriaId": 2,
+      "id": 5
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WQLBZiDvyjs",
+      "categoria": "Alexandre Porto",
+      "titulo": "Live sobre PRAXEOLOGIA",
+      "categoriaId": 3,
+      "id": 6
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gz6AWmRrkkw",
+      "titulo": "Live com IA Simulando Hoppe, Marx e Land (GPT-3)",
+      "categoria": "Alexandre Porto",
+      "categoriaId": 3,
+      "id": 7
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8VZhaYlR4Vg",
+      "titulo": "Imposto é Roubo",
+      "categoria": "Alexandre Porto",
+      "categoriaId": 3,
+      "id": 8
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8n_ZY-XO2x4",
+      "categoria": "Alexandre Porto",
+      "titulo": "Samy Dana no Flow e a Escola Austríaca",
+      "categoriaId": 3,
+      "id": 9
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CnOSUREjfEs",
+      "titulo": "Resposta ao Kim Kataguiri, o porta-voz do comunismo chinês",
+      "categoria": "Paulo Kogos",
+      "categoriaId": 1,
+      "id": 10
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=y8k2JqvZpVg&t=1s",
+      "categoria": "Paulo Kogos",
+      "titulo": "Imposto é roubo e o MBL é uma gang de receptadores",
+      "categoriaId": 1,
+      "id": 11
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3ih_dtSlTnY",
+      "titulo": "Deixem o preço do álcool gel subir",
+      "categoria": "Paulo Kogos",
+      "categoriaId": 1,
+      "id": 12
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Ee5-XliA_QA",
+      "titulo": "Conversa com Caroline De Toni 2",
+      "categoria": "Paulo Kogos",
+      "categoriaId": 1,
+      "id": 13
     }
   ]
 }

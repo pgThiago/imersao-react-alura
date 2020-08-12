@@ -67,6 +67,7 @@ body {
     right: 0;
     bottom: 0;
     background: var(--primary);
+    color: #000000;
     border-radius: 0;
     border: 0;
     text-align: center;

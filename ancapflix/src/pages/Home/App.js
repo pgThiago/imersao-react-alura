@@ -30,7 +30,7 @@ function Home() {
               <BannerMain
               videoTitle={dadosIniciais[0].videos[0].titulo}
               url={dadosIniciais[0].videos[0].url}
-              videoDescription="Você não sabe no que os fascistas realmente acreditavam."
+              videoDescription="Você realmente sabe no que os fascistas acreditavam?"
               />    
 
               <Carousel 
