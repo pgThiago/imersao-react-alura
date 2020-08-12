@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "79a5da794fcce472ff9929b723123a1e",
+    "revision": "ba4fa3a333b8f7eab7002992393e0aea",
     "url": "/Imersao-React-Alura/index.html"
   },
   {
