@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Imersao-React-Alura/static/css/main.436ead0a.chunk.css",
-    "main.js": "/Imersao-React-Alura/static/js/main.96a710ec.chunk.js",
-    "main.js.map": "/Imersao-React-Alura/static/js/main.96a710ec.chunk.js.map",
-    "runtime-main.js": "/Imersao-React-Alura/static/js/runtime-main.8330f4fa.js",
-    "runtime-main.js.map": "/Imersao-React-Alura/static/js/runtime-main.8330f4fa.js.map",
-    "static/js/2.0d7716a6.chunk.js": "/Imersao-React-Alura/static/js/2.0d7716a6.chunk.js",
-    "static/js/2.0d7716a6.chunk.js.map": "/Imersao-React-Alura/static/js/2.0d7716a6.chunk.js.map",
+    "main.css": "/Imersao-React-Alura/static/css/main.576d948b.chunk.css",
+    "main.js": "/Imersao-React-Alura/static/js/main.f932442d.chunk.js",
+    "main.js.map": "/Imersao-React-Alura/static/js/main.f932442d.chunk.js.map",
+    "runtime-main.js": "/Imersao-React-Alura/static/js/runtime-main.3ea04ae8.js",
+    "runtime-main.js.map": "/Imersao-React-Alura/static/js/runtime-main.3ea04ae8.js.map",
+    "static/js/2.7e5d43f7.chunk.js": "/Imersao-React-Alura/static/js/2.7e5d43f7.chunk.js",
+    "static/js/2.7e5d43f7.chunk.js.map": "/Imersao-React-Alura/static/js/2.7e5d43f7.chunk.js.map",
     "index.html": "/Imersao-React-Alura/index.html",
-    "precache-manifest.1539260f40cbbd6ae5bf1689fdad3c29.js": "/Imersao-React-Alura/precache-manifest.1539260f40cbbd6ae5bf1689fdad3c29.js",
+    "precache-manifest.341fc4c1a6114bc9fde881d572df10cf.js": "/Imersao-React-Alura/precache-manifest.341fc4c1a6114bc9fde881d572df10cf.js",
     "service-worker.js": "/Imersao-React-Alura/service-worker.js",
-    "static/css/main.436ead0a.chunk.css.map": "/Imersao-React-Alura/static/css/main.436ead0a.chunk.css.map",
-    "static/js/2.0d7716a6.chunk.js.LICENSE.txt": "/Imersao-React-Alura/static/js/2.0d7716a6.chunk.js.LICENSE.txt",
-    "static/media/logo.png": "/Imersao-React-Alura/static/media/logo.047c031a.png"
+    "static/css/main.576d948b.chunk.css.map": "/Imersao-React-Alura/static/css/main.576d948b.chunk.css.map",
+    "static/js/2.7e5d43f7.chunk.js.LICENSE.txt": "/Imersao-React-Alura/static/js/2.7e5d43f7.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/Imersao-React-Alura/static/media/logo.225fe6a0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8330f4fa.js",
-    "static/js/2.0d7716a6.chunk.js",
-    "static/css/main.436ead0a.chunk.css",
-    "static/js/main.96a710ec.chunk.js"
+    "static/js/runtime-main.3ea04ae8.js",
+    "static/js/2.7e5d43f7.chunk.js",
+    "static/css/main.576d948b.chunk.css",
+    "static/js/main.f932442d.chunk.js"
   ]
 }
