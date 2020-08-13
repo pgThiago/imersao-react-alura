@@ -19,7 +19,7 @@ const CadastroVideo = () => {
     useEffect(() => {
         
         async function loadCategorias(){
-            const URL = `http://localhost:8080/categorias`;
+            const URL = `https://ancapflix.vercel.app/categorias`;
             const response = await (await fetch(URL)).json();
             setCategorias(response);
         }

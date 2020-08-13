@@ -10,7 +10,7 @@ function Home() {
 
   useEffect(() => {
     async function loadData(){
-      const URL = `http://localhost:8080/categorias?_embed=videos`;
+      const URL = `https://ancapflix.vercel.app/categorias?_embed=videos`;
       const response = await (await fetch(URL)).json();
       setDadosIniciais(response);
     }
