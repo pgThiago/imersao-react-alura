@@ -1,9 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import { Link, useHistory } from 'react-router-dom';
 import useForm from '../../../hooks/useForm';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+
+import url_top from '../../../config';
 
 const CadastroVideo = () => {
 
@@ -14,25 +16,27 @@ const CadastroVideo = () => {
     
     const history = useHistory();
 
-    let categoryTitles = useRef([]);
+    // let categoryTitles = useRef([]);
+    let categoryTitles = [];
     
     useEffect(() => {
-        
+        const { URL_TOP } = url_top;
         async function loadCategorias(){
-            const URL = `https://ancapflix.vercel.app/categorias`;
+            const URL = `http://${URL_TOP}/categorias`;
             const response = await (await fetch(URL)).json();
             setCategorias(response);
         }
-        
-        categoryTitles.current = categorias.map(( { titulo } ) => titulo);
         loadCategorias();
-        
-    }, [categorias]);
+    }, []);
+
+    // categoryTitles.current = categorias.map(( { titulo } ) => titulo);
+    categoryTitles = categorias.map(( { titulo } ) => titulo);
     
     console.log('categoryTitles: ', categoryTitles);
+    
 
     function create(){
-        const URL = `http://localhost:8080/videos?_embed=videos`;
+        const URL = `http://${url_top}/videos?_embed=videos`;
 
         const categoId = categorias.find((categoria) => {
             return categoria.titulo === valores.categoria;

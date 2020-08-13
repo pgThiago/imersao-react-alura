@@ -6,6 +6,8 @@ import Button from '../../components/Button';
 
 import useForm from '../../hooks/useForm';
 
+import url_top from '../../config';
+
 const CadastroCategoria = () => {
   const valoresIniciais = {
     nome: '',
@@ -18,8 +20,9 @@ const CadastroCategoria = () => {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
+    const { URL_TOP } = url_top;
     async function loadData(){
-      const URL = `https://ancapflix.vercel.app/categorias`;
+      const URL = `http://${URL_TOP}/categorias`;
       const response = await (await fetch(URL)).json();
       setCategorias([...response]);
     }

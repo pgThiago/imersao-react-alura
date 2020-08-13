@@ -4,13 +4,16 @@ import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import PageDefault from '../../components/PageDefault';
 
+import url_top from '../../config';
+
 function Home() {
 
   const [ dadosIniciais, setDadosIniciais ] = useState([]);
 
   useEffect(() => {
+    const { URL_TOP } = url_top;
     async function loadData(){
-      const URL = `https://ancapflix.vercel.app/categorias?_embed=videos`;
+      const URL = `${URL_TOP}/categorias?_embed=videos`;
       const response = await (await fetch(URL)).json();
       setDadosIniciais(response);
     }
