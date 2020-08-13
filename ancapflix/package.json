@@ -50,12 +50,17 @@
     "eslint-plugin-react-hooks": "^4.0.8",
     "gh-pages": "^3.1.0"
   },
-    "buildpacks": [
-      {
-        "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
-      },
-      {
-        "url": "heroku/nodejs"
-      }
-    ]
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": ".eslintrc.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
