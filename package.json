@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/pgThiago/Imersao-React-Alura/issues"
   },
-  "homepage": "https://github.com/pgThiago/Imersao-React-Alura#readme"
+  "homepage": "https://github.com/pgThiago/Imersao-React-Alura#readme",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  }
 }
