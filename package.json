@@ -1,0 +1,20 @@
+{
+  "name": "imersao-react-alura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgThiago/Imersao-React-Alura.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgThiago/Imersao-React-Alura/issues"
+  },
+  "homepage": "https://github.com/pgThiago/Imersao-React-Alura#readme"
+}
