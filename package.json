@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./server.js",
     "server:static": "json-server --watch ./src/data/db.json --port 8080",
-    "server": "node ./server.js",
+    "server": "node ./server.js"
   },
   "repository": {
     "type": "git",
