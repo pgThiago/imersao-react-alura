@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server.js",
-    "server:static": "json-server --watch ./src/data/db.json --port 8080",
-    "server": "node ./server.js"
+    "server:static": "node ./server.js",
+    "server": "node ./server.js",
+    "start": "json-server --watch ./db.json --port 8080"
   },
   "repository": {
     "type": "git",
