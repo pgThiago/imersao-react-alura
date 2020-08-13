@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import { Link, useHistory } from 'react-router-dom';
 import useForm from '../../../hooks/useForm';
@@ -14,21 +14,20 @@ const CadastroVideo = () => {
     
     const history = useHistory();
 
-    let categoryTitles = [];
+    let categoryTitles = useRef([]);
     
     useEffect(() => {
         
         async function loadCategorias(){
             const URL = `http://localhost:8080/categorias`;
             const response = await (await fetch(URL)).json();
-            // console.log(response);
             setCategorias(response);
         }
         
+        categoryTitles.current = categorias.map(( { titulo } ) => titulo);
         loadCategorias();
-        categoryTitles = categorias.map(( { titulo } ) => titulo);
         
-    }, []);
+    }, [categorias]);
     
     console.log('categoryTitles: ', categoryTitles);
 
