@@ -22,7 +22,7 @@ const CadastroCategoria = () => {
   useEffect(() => {
     const { URL_TOP } = url_top;
     async function loadData(){
-      const URL = `http://${URL_TOP}/categorias`;
+      const URL = `${URL_TOP}/categorias`;
       const response = await (await fetch(URL)).json();
       setCategorias([...response]);
     }
