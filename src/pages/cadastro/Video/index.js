@@ -29,10 +29,8 @@ const CadastroVideo = () => {
         loadCategorias();
     }, []);
 
-    // categoryTitles.current = categorias.map(( { titulo } ) => titulo);
     categoryTitles = categorias.map(( { titulo } ) => titulo);
     
-    console.log('categoryTitles: ', categoryTitles);
     
 
     function create(){
@@ -54,50 +52,56 @@ const CadastroVideo = () => {
         
     }
 
-    return (
-        <PageDefault>
-            <h1>Cadastrar video</h1>
+        
+        return (
+            <PageDefault>
+                <h1>Cadastrar video</h1>
 
-            <form onSubmit={(e) => {
-                e.preventDefault();
-                               
-                create();
-                history.push('/');
-            }}>
+                <form onSubmit={(e) => {
+                    e.preventDefault();
+                                
+                    create();
+                    history.push('/');
+                }}>
 
-                <FormField
-                    label="Título do vídeo"
-                    name="titulo"
-                    value={valores.titulo}
-                    onChange={handleChange}
-                />
+                    <FormField
+                        label="Título do vídeo"
+                        name="titulo"
+                        value={valores.titulo}
+                        onChange={handleChange}
+                    />
 
-                <FormField
-                    label="URL"
-                    name="url"
-                    value={valores.url}
-                    onChange={handleChange}
-                />
+                    <FormField
+                        label="URL"
+                        name="url"
+                        value={valores.url}
+                        onChange={handleChange}
+                    />
 
-                <FormField
-                    label="Categoria"
-                    name="categoria"
-                    value={valores.categoria}
-                    onChange={handleChange}
-                    suggestions={categoryTitles}
-                />
+                    <FormField
+                        label="Categoria"
+                        name="categoria"
+                        value={valores.categoria}
+                        onChange={handleChange}
+                        suggestions={categoryTitles}
+                    />
 
-                <Button type="submit">
-                    Cadastrar
-                </Button>
+                    <Button type="submit">
+                        Cadastrar
+                    </Button>
 
-            </form>
-
-            <Link to="/cadastro/categoria">
-                Cadastrar categoria
-            </Link>
-        </PageDefault>
-    )
+                </form>
+            
+                {window.location.hostname.includes('localhost') ? 
+                <Link to="/cadastro/categoria">
+                    Cadastrar categoria
+                </Link>
+                : 
+                <Link to="/">
+                    Cadastrar categoria
+                </Link> 
+                }
+        </PageDefault>)
 }
 
 export default CadastroVideo;
