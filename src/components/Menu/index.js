@@ -14,14 +14,10 @@ const Menu = () => {
             </Link>
 
             {
-            window.location.hostname.includes('localhost') ? 
-            <Button as={Link} className="ButtonLink" to="/cadastro/video" >
-                Novo vídeo
-            </Button>
-            : 
-            <Button as={Link} className="ButtonLink" to="/" >
-                Novo vídeo
-            </Button> 
+                window.location.hostname.includes('localhost') &&
+                <Button as={Link} className="ButtonLink" to="/cadastro/video" >
+                    Novo vídeo
+                </Button>            
             }
             
         </nav>       
