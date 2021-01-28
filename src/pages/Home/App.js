@@ -17,7 +17,9 @@ function Home() {
       try{
         const URL = `${URL_TOP}/videos`;
         const response = await (await fetch(URL, {
-          mode: 'no-cors'
+          headers: {
+            'Access-Control-Allow-Origin': '*'
+          },
         })).json();
         setVideos(response);
       }
@@ -34,7 +36,9 @@ function Home() {
       try{
         const URL = `${URL_TOP}/categorias`;
         const response = await (await fetch(URL, {
-          mode: 'no-cors'
+          headers: {
+            'Access-Control-Allow-Origin': '*'
+          },
         })).json();
         setCategorias(response);
       }

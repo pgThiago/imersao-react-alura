@@ -24,7 +24,9 @@ const CadastroVideo = () => {
         async function loadCategorias(){
             const URL = `${URL_TOP}/categorias`;
             const response = await (await fetch(URL, {
-                mode: 'no-cors'
+                headers: {
+                    'Access-Control-Allow-Origin': '*'
+                },
             })).json();
             setCategorias(response);
         }
