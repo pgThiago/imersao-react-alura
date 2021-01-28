@@ -112,9 +112,6 @@ const FormField = ({ onChange, type, name, label, value, suggestions }) => {
   const fieldId = `id_${name}`;
   const hasSuggestions = Boolean(suggestions.length);
   const hasValue = Boolean(value.length);
-  const isTypeTextarea = type === 'textarea';
-  const tag = isTypeTextarea ? 'textarea' : 'input';
-  console.log(type)
 
   return (
     <FormFieldWrapper>

@@ -67,11 +67,11 @@ function Home() {
           }
         )
       }             
-      <Carousel
+      {videos && (<Carousel
         ignoreFirstVideo
         videoArray={videos}
         categoriaArray={categorias}
-      />
+      />)}
     </PageDefault>
   );
 }
