@@ -23,7 +23,9 @@ const CadastroCategoria = () => {
   useEffect(() => {    
     async function loadData(){
       const URL = `${URL_TOP}/categorias`;
-      const response = await (await fetch(URL)).json();
+      const response = await (await fetch(URL, {
+        mode: 'no-cors'
+      })).json();
       setCategorias(response);
     }
     loadData();
@@ -36,7 +38,7 @@ const CadastroCategoria = () => {
     fetch(URL, {
         method: 'post',
         headers: {
-          'Content-type': 'application/json'
+          'Content-type': 'application/json',
         },
         body: JSON.stringify(valores),
     });

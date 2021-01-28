@@ -16,7 +16,9 @@ function Home() {
     async function loadVideos(){
       try{
         const URL = `${URL_TOP}/videos`;
-        const response = await (await fetch(URL)).json();
+        const response = await (await fetch(URL, {
+          mode: 'no-cors'
+        })).json();
         setVideos(response);
       }
       catch(error){
@@ -31,7 +33,9 @@ function Home() {
     async function loadCategorias(){
       try{
         const URL = `${URL_TOP}/categorias`;
-        const response = await (await fetch(URL)).json();
+        const response = await (await fetch(URL, {
+          mode: 'no-cors'
+        })).json();
         setCategorias(response);
       }
       catch(error){

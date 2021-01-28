@@ -23,7 +23,9 @@ const CadastroVideo = () => {
     useEffect(() => {
         async function loadCategorias(){
             const URL = `${URL_TOP}/categorias`;
-            const response = await (await fetch(URL)).json();
+            const response = await (await fetch(URL, {
+                mode: 'no-cors'
+            })).json();
             setCategorias(response);
         }
         loadCategorias();
@@ -43,13 +45,11 @@ const CadastroVideo = () => {
         fetch(URL, {
             method: 'post',
             headers: {
-                'Content-type': 'application/json'
+                'Content-type': 'application/json',
             },
             body: JSON.stringify(valores),
         });        
-    }
-
-    
+    }    
         
     return (
         <PageDefault>
