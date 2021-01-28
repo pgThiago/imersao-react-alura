@@ -8,37 +8,44 @@ import useForm from '../../hooks/useForm';
 
 import url_top from '../../config';
 
+const { URL_TOP } = url_top;
+
 const CadastroCategoria = () => {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
   };
 
   const { valores, handleChange, clearForm } = useForm(valoresIniciais);
-
   const [categorias, setCategorias] = useState([]);
 
-  useEffect(() => {
-    const { URL_TOP } = url_top;
+  useEffect(() => {    
     async function loadData(){
       const URL = `${URL_TOP}/categorias`;
       const response = await (await fetch(URL)).json();
-      setCategorias([...response]);
+      setCategorias(response);
     }
-    
     loadData();
-
   }, []);
 
   function handleSubmit(e) {
     e.preventDefault();
     setCategorias([...categorias, valores]);
+    const URL = `${URL_TOP}/categorias`;
+    fetch(URL, {
+        method: 'post',
+        headers: {
+          'Content-type': 'application/json'
+        },
+        body: JSON.stringify(valores),
+    });
+    
     clearForm();
+
   } 
 
   return (
-
     <PageDefault>
       <h1>
         Cadastro Categoria:
@@ -50,8 +57,8 @@ const CadastroCategoria = () => {
         <FormField
           label="Nome da categoria"
           type="text"
-          name="nome"
-          value={valores.nome}
+          name="titulo"
+          value={valores.titulo}
           onChange={handleChange}
         />
 
@@ -69,25 +76,30 @@ const CadastroCategoria = () => {
           name="cor"
           value={valores.cor}
           onChange={handleChange}
-        />
-  
+          // onChange={(e) => console.log(e.target.value)}
+        />  
 
         <Button>Cadastrar</Button>
       </form>
 
       {categorias.length === 0 && (
-        <div>Loading</div>
+        <div>Carregando...</div>
       )}
 
       <ul>
         {categorias.map((categoria, indice) => (
-          <li key={indice}>{categoria.nome}</li>
+          <li key={indice}>{categoria.titulo}</li>
         ))}
       </ul>
 
-      <Link to="/">
-        Ir para home
-      </Link>
+      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', flexDirection: 'column' }}>
+        <Link style={{ marginBottom: 20 }} to="/cadastro/video">
+          Ir para cadastro de video
+        </Link>
+        <Link style={{ marginBottom: 20 }} to="/">
+          Ir para home
+        </Link>
+      </div>
     </PageDefault>
   );
 };

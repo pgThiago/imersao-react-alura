@@ -8,49 +8,66 @@ import url_top from '../../config';
 
 function Home() {
 
-  const [ dadosIniciais, setDadosIniciais ] = useState([]);
+  const [ videos, setVideos ] = useState([]);
+  const [ categorias, setCategorias ] = useState([]);
 
   useEffect(() => {
     const { URL_TOP } = url_top;
-    async function loadData(){
-      const URL = `${URL_TOP}/categorias?_embed=videos`;
-      const response = await (await fetch(URL)).json();
-      setDadosIniciais(response);
+    async function loadVideos(){
+      try{
+        const URL = `${URL_TOP}/videos`;
+        const response = await (await fetch(URL)).json();
+        setVideos(response);
+      }
+      catch(error){
+        console.log(error);
+      }
     }
-    
-    loadData();
-
+    loadVideos();
   }, []);
 
+  useEffect(() => {
+    const { URL_TOP } = url_top;
+    async function loadCategorias(){
+      try{
+        const URL = `${URL_TOP}/categorias`;
+        const response = await (await fetch(URL)).json();
+        setCategorias(response);
+      }
+      catch(error){
+        console.log(error);
+      }
+    }
+    loadCategorias();
+  }, []);
+  
   return (
     <PageDefault paddingAll={0}>
-      {dadosIniciais.length === 0 && (<div>Loading...</div>)}
-
-      {dadosIniciais.map((categoria, indice) => {
-        if (indice === 0){
-          return (
-            <div key={categoria.id}>
-              <BannerMain
-              videoTitle={dadosIniciais[0].videos[0].titulo}
-              url={dadosIniciais[0].videos[0].url}
-              videoDescription="Você realmente sabe no que os fascistas acreditavam?"
-              />    
-
-              <Carousel 
-              ignoreFirstVideo
-              category={dadosIniciais[0]}
-              />         
-            </div>
-          )
-        }
-        return (
-          <Carousel 
-          key={categoria.id}
-          category={categoria}
-          />
+      {videos.length === 0 && (
+        <div 
+        style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Carregando...</div>
+      )}
+      
+      {
+        videos.map((video, indice) => {
+          if(indice === 0){
+            return (
+              <div key={video.id}>
+                <BannerMain
+                  videoTitle={video.titulo}
+                  url={video.url}
+                  videoDescription=""
+                />
+              </div>)
+            }
+          }
         )
-      })}  
-
+      }             
+      <Carousel
+        ignoreFirstVideo
+        videoArray={videos}
+        categoriaArray={categorias}
+      />
     </PageDefault>
   );
 }

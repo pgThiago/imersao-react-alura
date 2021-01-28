@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled.h3`
-  color: black;
+  color: #FFFF;
   font-style: normal;
   font-weight: normal;
   font-size: 35px;

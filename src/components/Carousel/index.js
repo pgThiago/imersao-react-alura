@@ -1,48 +1,46 @@
 import React from 'react';
-import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
+import { VideoCardGroupContainer, Title } from './styles';
 import VideoCard from './components/VideoCard';
 
 import Slider, { SliderItem } from './components/Slider';
 
-function Carousel({
-  ignoreFirstVideo,
-  category,
-}) {
-  const categoryTitle = category.titulo;
-  const categoryColor = category.cor;
-  const categoryExtraLink = category.link_extra;
-  const videos = category.videos;
+function Carousel({ ignoreFirstVideo, videoArray, categoriaArray }) {
+  
+  if(videoArray === undefined){
+    return <div 
+      style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Carregando...</div>
+  }
+
   return (
     <VideoCardGroupContainer>
-      {categoryTitle && (
-        <>
-          <Title style={{ backgroundColor: '#F4DD00' }}>
-            {categoryTitle}
-          </Title>
-          {categoryExtraLink && 
-            <ExtraLink href={categoryExtraLink.url} target="_blank">
-              {categoryExtraLink.text}  
-            </ExtraLink>
-          }
-        </>
-      )}
-      <Slider>
-        {videos.map((video, index) => {
-          if (ignoreFirstVideo && index === 0) {
-            return null;
-          }
-
+      {categoriaArray.map(categoria => {
           return (
-            <SliderItem key={video.titulo}>
-              <VideoCard
-                videoTitle={video.titulo}
-                videoURL={video.url}
-                categoryColor={categoryColor}
-              />
-            </SliderItem>
-          );
-        })}
-      </Slider>
+            <>
+              <Title style={{ backgroundColor: '#000052' }}>
+                <p>{categoria.titulo}</p>
+              </Title>       
+            
+                <Slider>                
+                    {
+                      videoArray.map((video, indice) => {
+                        if(ignoreFirstVideo && indice === 0)
+                          return null
+                        else{
+                          return video.categoriaId === categoria.id && (
+                            <SliderItem key={video.id}>
+                              <VideoCard
+                                videoTitle={video.titulo}
+                                videoURL={video.url}
+                              />
+                            </SliderItem>
+                          )
+                        }
+                      })
+                    }                    
+              </Slider>
+          </>
+        )
+      })}      
     </VideoCardGroupContainer>
   );
 }

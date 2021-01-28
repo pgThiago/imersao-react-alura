@@ -1,123 +1,81 @@
 {
   "categorias": [
     {
-      "id": 1,
-      "titulo": "Paulo Kogos",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Se tu fremes diante do mercado, clamando por regulação do estado, para trás! Inditoso esquerdista! Não serás nunca um conservador capitalista!",
-        "url": "https://www.youtube.com/user/paulokogos/videos"
-      }
+      "titulo": "Buracos Negros",
+      "descricao": "Aprenda sobre buracos negros com Serjão do SpaceToday.",
+      "cor": "#0000ff",
+      "id": 1
     },
     {
-      "id": 2,
-      "titulo": "Ideias Radicais",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Gradualismo (diferente de Gadualismo) é aqui nesse canal!",
-        "url": "https://www.youtube.com/c/ideiasradicais/videos"
-      }
-    },
-    {
-      "id": 3,
-      "titulo": "Alexandre Porto",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Tem que descentralizar, eu sou a favor da descentralização!",
-        "url": "https://www.youtube.com/c/AlexandrePorto/videos"
-      }
+      "titulo": "James Webb",
+      "descricao": "Saiba de todas as novidades desse telescópio que promete muito para o futuro da ciência.",
+      "cor": "#0000ff",
+      "id": 2
     }
   ],
   "videos": [
     {
-      "id": 1,
+      "titulo": "Space Today TV Patreon - O Repositório de Sonhos",
+      "url": "https://youtu.be/PMrtgMJO30I",
+      "categoria": "Buracos Negros",
       "categoriaId": 1,
-      "titulo": "Por que não se ensina o que é Fascismo?",
-      "url": "https://www.youtube.com/watch?v=Db2tzqN7NfU&t=11s"
+      "id": 1
     },
     {
-      "url": "https://www.youtube.com/watch?v=ItrWtTiOaKU",
-      "categoria": "Ideias Radicais",
-      "titulo": "Meu professor faz doutrinação estatista, o que fazer?",
-      "categoriaId": 2,
+      "titulo": "BURACOS NEGROS ESTUPIDAMENTE GRANDES",
+      "url": "https://www.youtube.com/watch?v=bYBDLX9B07A&list=PLSn5Nx9GNk6IEbEX3KRlBHuh_Z5a26Odz&ab_channel=SpaceToday",
+      "categoria": "Buracos Negros",
+      "categoriaId": 1,
       "id": 2
     },
     {
-      "url": "https://www.youtube.com/watch?v=S6Bq2uCSgIw&t=10s",
-      "titulo": "Revolução na Bielorrússia - O que vai acontecer?",
-      "categoria": "Ideias Radicais",
-      "categoriaId": 2,
+      "titulo": "ONDAS GRAVITACIONAIS DE BURACOS NEGROS SUPERMASSIVOS",
+      "url": "https://www.youtube.com/watch?v=u-PbxgzYV2M&list=PLSn5Nx9GNk6IEbEX3KRlBHuh_Z5a26Odz&index=3&ab_channel=SpaceToday",
+      "categoria": "Buracos Negros",
+      "categoriaId": 1,
       "id": 3
     },
     {
-      "categoria": "Ideias Radicais",
-      "url": "https://www.youtube.com/watch?v=WFQlZXOgTu4",
-      "titulo": "É cada argumento sem sentido...",
+      "titulo": "JAMES WEBB COMPLETO ABRE SEU ESCUDO DE CALOR",
+      "url": "https://www.youtube.com/watch?v=YS3_6Zl8T1o&list=PLSn5Nx9GNk6J_3ch4WlHHRe5fZdai5s_u&ab_channel=SpaceToday",
+      "categoria": "James Webb",
       "categoriaId": 2,
       "id": 4
     },
     {
-      "url": "https://www.youtube.com/watch?v=nicYmaJCCco",
-      "titulo": "4 Países que o Brasil deveria copiar",
-      "categoria": "Ideias Radicais",
+      "categoria": "James Webb",
+      "titulo": "4 RECORDES QUE O JAMES WEBB PODE QUEBRAR NA ASTRONOMIA",
+      "url": "https://www.youtube.com/watch?v=yAA7hjyVwS0&list=PLSn5Nx9GNk6J_3ch4WlHHRe5fZdai5s_u&index=2&ab_channel=SpaceToday",
       "categoriaId": 2,
       "id": 5
     },
     {
-      "url": "https://www.youtube.com/watch?v=WQLBZiDvyjs",
-      "categoria": "Alexandre Porto",
-      "titulo": "Live sobre PRAXEOLOGIA",
-      "categoriaId": 3,
+      "titulo": "COMO DOBRAR UM TELESCÓPIO ESPACIAL - NOTÍCIAS DO JAMES WEBB",
+      "url": "https://www.youtube.com/watch?v=GVxOOfKD7rM&list=PLSn5Nx9GNk6J_3ch4WlHHRe5fZdai5s_u&index=3&ab_channel=SpaceToday",
+      "categoria": "James Webb",
+      "categoriaId": 2,
       "id": 6
     },
     {
-      "url": "https://www.youtube.com/watch?v=gz6AWmRrkkw",
-      "titulo": "Live com IA Simulando Hoppe, Marx e Land (GPT-3)",
-      "categoria": "Alexandre Porto",
-      "categoriaId": 3,
+      "titulo": "31 DE OUTUBRO DE 2021 - A DATA DE LANÇAMENTO DO JAMES WEBB",
+      "url": "https://www.youtube.com/watch?v=tLQnY6AE-7Q&list=PLSn5Nx9GNk6J_3ch4WlHHRe5fZdai5s_u&index=7&ab_channel=SpaceToday",
+      "categoria": "James Webb",
+      "categoriaId": 2,
       "id": 7
     },
     {
-      "url": "https://www.youtube.com/watch?v=8VZhaYlR4Vg",
-      "titulo": "Imposto é Roubo",
-      "categoria": "Alexandre Porto",
-      "categoriaId": 3,
+      "titulo": "O INTROVERTIDO BURACO NEGRO DA VIA LÁCTEA",
+      "url": "https://www.youtube.com/watch?v=YQxcSzRauc4&list=PLSn5Nx9GNk6IEbEX3KRlBHuh_Z5a26Odz&index=7&ab_channel=SpaceToday",
+      "categoria": "Buracos Negros",
+      "categoriaId": 1,
       "id": 8
     },
     {
-      "url": "https://www.youtube.com/watch?v=8n_ZY-XO2x4",
-      "categoria": "Alexandre Porto",
-      "titulo": "Samy Dana no Flow e a Escola Austríaca",
-      "categoriaId": 3,
+      "titulo": "A OSCILAÇÃO DA SOMBRA DO BURACO NEGRO",
+      "url": "https://www.youtube.com/watch?v=llgecD1wEJI&list=PLSn5Nx9GNk6IEbEX3KRlBHuh_Z5a26Odz&index=11&ab_channel=SpaceToday",
+      "categoria": "Buracos Negros",
+      "categoriaId": 1,
       "id": 9
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=CnOSUREjfEs",
-      "titulo": "Resposta ao Kim Kataguiri, o porta-voz do comunismo chinês",
-      "categoria": "Paulo Kogos",
-      "categoriaId": 1,
-      "id": 10
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=y8k2JqvZpVg&t=1s",
-      "categoria": "Paulo Kogos",
-      "titulo": "Imposto é roubo e o MBL é uma gang de receptadores",
-      "categoriaId": 1,
-      "id": 11
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=3ih_dtSlTnY",
-      "titulo": "Deixem o preço do álcool gel subir",
-      "categoria": "Paulo Kogos",
-      "categoriaId": 1,
-      "id": 12
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=Ee5-XliA_QA",
-      "titulo": "Conversa com Caroline De Toni 2",
-      "categoria": "Paulo Kogos",
-      "categoriaId": 1,
-      "id": 13
     }
   ]
 }
