@@ -10,7 +10,7 @@ const Menu = () => {
     return (
         <nav className="Menu">
             <Link to="/">
-                <img className="Logo" src={logo} alt="Logo do TSFLIX"/>
+                <img className="Logo" src={logo} alt="Logo do SPACEFLIX"/>
             </Link>
 
             {
